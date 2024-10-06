@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs'
 import { join } from 'path'
 
-const deleteFile = async () => {
+const remove = async () => {
   const filePath = join(process.cwd(), 'src', 'fs', 'files', 'fileToRemove.txt')
 
   try {
@@ -14,4 +14,4 @@ const deleteFile = async () => {
   }
 }
 
-await deleteFile()
+await remove()
